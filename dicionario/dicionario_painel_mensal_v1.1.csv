@@ -1,0 +1,101 @@
+variavel;descricao;unidade;fonte
+ano;Ano;;
+mes;Mês (1 a 12);;
+data;Primeiro dia do mês;data;
+t;Tendência (1 = jan/2015);índice;
+governo;Governo/presidente no dia 1º do mês (mai/2016 = Temer);;
+presidente;Governo/presidente no dia 1º do mês (mai/2016 = Temer);;
+dez;Dummy de dezembro;0/1;
+eleitoral;Dummy de período eleitoral: jul–out de anos eleitorais (vedação de transferências voluntárias, Lei 9.504/1997, art. 73);0/1;
+ano_eleicao_geral;Dummy de ano de eleição geral (2018, 2022);0/1;
+pos_ec86;Dummies institucionais: EC 86/2015 (RP6 impositivo), EC 100/2019 (RP7 impositivo, a partir de 2020), EC 105/2019 (transferências especiais, a partir de 2020);0/1;
+pos_ec100;Dummies institucionais: EC 86/2015 (RP6 impositivo), EC 100/2019 (RP7 impositivo, a partir de 2020), EC 105/2019 (transferências especiais, a partir de 2020);0/1;
+pos_ec105_pix;Dummies institucionais: EC 86/2015 (RP6 impositivo), EC 100/2019 (RP7 impositivo, a partir de 2020), EC 105/2019 (transferências especiais, a partir de 2020);0/1;
+rp9_vigente;Dummy dos anos com RP9 (2020–2022);0/1;
+n_pastas;Nº de pastas com status ministerial no mês (sem a Vice-Presidência);nº;base ministerial
+n_pastas_D1;Pastas de cota partidária (D1);nº;base ministerial
+n_pastas_D2;Pastas de cota partidária com tipo_indicacao = bancada (D2);nº;base ministerial
+n_pastas_sem_partido;Pastas cujo titular não tem cota partidária (sem partido);nº;base ministerial
+n_pastas_outro;Pastas sem adesão partidária (tipo_indicacao = outro: sem partido ou filiado nomeado sem adesão da legenda);nº;base ministerial
+n_interinos;Pastas ocupadas por interino no mês;nº;base ministerial
+n_partidos_D1;Nº de partidos na coalizão (D1 ou D2);nº;base ministerial
+partidos_D1;Lista dos partidos da coalizão;texto;base ministerial
+pastas_partidarias_D1;Pastas dos partidos da coalizão;nº;base ministerial
+cadeiras_coal_D1;Deputados em exercício dos partidos da coalizão, último dia do mês;nº;Câmara, Dados Abertos
+total_exercicio_D1;Deputados em exercício no último dia do mês;nº;Câmara, Dados Abertos
+coalescencia_D1;Coalescência (Amorim Neto 2000): 1 − ½Σ|pastas_i − cadeiras_i|, nas parcelas da coalizão;0–1;base ministerial + Câmara
+pct_cadeiras_D1;Cadeiras da coalizão na Câmara;%;Câmara, Dados Abertos
+n_partidos_D2;Nº de partidos na coalizão (D1 ou D2);nº;base ministerial
+partidos_D2;Lista dos partidos da coalizão;texto;base ministerial
+pastas_partidarias_D2;Pastas dos partidos da coalizão;nº;base ministerial
+cadeiras_coal_D2;Deputados em exercício dos partidos da coalizão, último dia do mês;nº;Câmara, Dados Abertos
+total_exercicio_D2;Deputados em exercício no último dia do mês;nº;Câmara, Dados Abertos
+coalescencia_D2;Coalescência (Amorim Neto 2000): 1 − ½Σ|pastas_i − cadeiras_i|, nas parcelas da coalizão;0–1;base ministerial + Câmara
+pct_cadeiras_D2;Cadeiras da coalizão na Câmara;%;Câmara, Dados Abertos
+disc_min;Discricionário ministerial (RP2+RP3) nos órgãos com status ministerial, reescalado ao total anual do SIOP por órgão (D-06);R$ mi IPCA;SIGA + SIOP
+disc_min_siga;Idem, sem reescala (robustez);R$ mi IPCA;SIGA
+disc_min_extraord;Parcela do discricionário ministerial em créditos extraordinários (D-08);R$ mi IPCA;SIGA + SIOP
+disc_min_rp2;Discricionário ministerial por RP;R$ mi IPCA;SIGA + SIOP
+disc_min_rp3;Discricionário ministerial por RP;R$ mi IPCA;SIGA + SIOP
+disc_min_presidencia;"Parcela do discricionário ministerial executada pela Presidência da República (órgão 20000); na série principal, a UO 20101 vai para a Casa Civil (D-25); robustez: tudo para o partido do presidente";R$ mi IPCA;SIGA + SIOP
+disc_min_sem_extraord;Discricionário ministerial sem créditos extraordinários (robustez);R$ mi IPCA;SIGA + SIOP
+rp7;Emendas de bancada (RP7), de comissão (RP8) e de relator (RP9), reescaladas ao SIOP por ano;R$ mi IPCA;SIGA + SIOP
+rp8;Emendas de bancada (RP7), de comissão (RP8) e de relator (RP9), reescaladas ao SIOP por ano;R$ mi IPCA;SIGA + SIOP
+rp9;Emendas de bancada (RP7), de comissão (RP8) e de relator (RP9), reescaladas ao SIOP por ano;R$ mi IPCA;SIGA + SIOP
+rp7_siga;Idem, sem reescala;R$ mi IPCA;SIGA
+rp8_siga;Idem, sem reescala;R$ mi IPCA;SIGA
+rp9_siga;Idem, sem reescala;R$ mi IPCA;SIGA
+rp6_demais;RP6 por modalidade (Pix = transferência especial, órgão 73000);R$ mi IPCA;SIGA
+rp6_pix;RP6 por modalidade (Pix = transferência especial, órgão 73000);R$ mi IPCA;SIGA
+dm_outros_partidos_D1;Discricionário ministerial por grupo da pasta que controla o órgão (D1): partido do presidente, outros partidos, sem partido;R$ mi IPCA;base ministerial + SIGA
+dm_partido_presidente;Discricionário ministerial por grupo da pasta que controla o órgão (D1): partido do presidente, outros partidos, sem partido;R$ mi IPCA;base ministerial + SIGA
+dm_sem_partido;Discricionário ministerial por grupo da pasta que controla o órgão (D1): partido do presidente, outros partidos, sem partido;R$ mi IPCA;base ministerial + SIGA
+dm_sem_controlador;Discricionário ministerial por grupo da pasta que controla o órgão (D1): partido do presidente, outros partidos, sem partido;R$ mi IPCA;base ministerial + SIGA
+dmD2_outros_partidos_D2;Idem, D2: separa as pastas de cota partidária que não são de bancada (D1_fora_D2_outro = filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA
+dmD2_partido_presidente;Idem, D2: separa as pastas de cota partidária que não são de bancada (D1_fora_D2_outro = filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA
+dmD2_sem_partido;Idem, D2: separa as pastas de cota partidária que não são de bancada (D1_fora_D2_outro = filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA
+dmD2_sem_controlador;Idem, D2: separa as pastas de cota partidária que não são de bancada (D1_fora_D2_outro = filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA
+dmD2_D1_fora_D2_outro;Idem, D2: separa as pastas de cota partidária que não são de bancada (D1_fora_D2_outro = filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA
+rp6;"Emendas individuais (RP6), inclusive transferências especiais; 2020+ pela extração sem filtro de Poder (D-10)";R$ mi IPCA;SIGA
+emendas;RP6+RP7+RP8+RP9;R$ mi IPCA;
+disc_total;"Discricionário total = disc_min + emendas (denominador das participações; exclui operações especiais 71000–75000)";R$ mi IPCA;
+sh_disc_min;Participação no discricionário total;proporção;
+sh_disc_min_sem_extraord;Participação no discricionário total;proporção;
+sh_rp6;Participação no discricionário total;proporção;
+sh_rp7;Participação no discricionário total;proporção;
+sh_rp8;Participação no discricionário total;proporção;
+sh_rp9;Participação no discricionário total;proporção;
+sh_emendas;Participação no discricionário total;proporção;
+versao;Versão e data de congelamento;;
+rp8_D1_coalizao_D1;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D1_comissao;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D1_fora_coalizao_D1;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D1_nao_atribuido;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D1_partido_presidente;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D1_coalizao_D1;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D1_fora_coalizao_D1;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D1_nao_atribuido;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D1_partido_presidente;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D2_coalizao_D2;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D2_comissao;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D2_fora_coalizao_D2;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D2_nao_atribuido;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp8_D2_partido_presidente;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D2_coalizao_D2;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D2_fora_coalizao_D2;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D2_nao_atribuido;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+rp9_D2_partido_presidente;"RP8/RP9 por grupo do apoiador (rateio igual, partido em cascata; D-12 a D-17). Participação anual × coalizão do mês; nao_atribuido = sem apoiador";R$ mi IPCA;Portal da Transparência (apoiamentos)
+data_congelamento;Versão e data de congelamento;;
+excl_auxilio;Créditos extraordinários do auxílio emergencial excluídos do discricionário ministerial (UO 55101, RP2/RP3, 2020–2021);R$ mi IPCA;SIGA + SIOP
+excl_cessao;Créditos da cessão onerosa excluídos do discricionário ministerial (UOs 32101 e 73104, 2019);R$ mi IPCA;SIGA + SIOP
+disc_min_d45;Discricionário ministerial, série principal da v1.1: disc_min menos excl_auxilio e excl_cessao;R$ mi IPCA;SIGA + SIOP
+disc_min_d45_fora;Robustez: discricionário ministerial sem nenhum crédito extraordinário e sem a cessão onerosa;R$ mi IPCA;SIGA + SIOP
+dm45_outros_partidos_D1;Discricionário ministerial da série principal (disc_min_d45) controlado por: outros partidos da coalizão (D1);R$ mi IPCA;base ministerial + SIGA
+dm45_partido_presidente;Discricionário ministerial da série principal (disc_min_d45) controlado por: partido do presidente;R$ mi IPCA;base ministerial + SIGA
+dm45_sem_partido;Discricionário ministerial da série principal (disc_min_d45) controlado por: pastas sem partido;R$ mi IPCA;base ministerial + SIGA
+dm45_sem_controlador;Discricionário ministerial da série principal (disc_min_d45) controlado por: órgãos sem pasta controladora no mês;R$ mi IPCA;base ministerial + SIGA
+dmD2_45_outros_partidos_D2;Idem, critério D2: outros partidos da coalizão (D2);R$ mi IPCA;base ministerial + SIGA
+dmD2_45_partido_presidente;Idem, critério D2: partido do presidente;R$ mi IPCA;base ministerial + SIGA
+dmD2_45_sem_partido;Idem, critério D2: pastas sem partido;R$ mi IPCA;base ministerial + SIGA
+dmD2_45_sem_controlador;Idem, critério D2: órgãos sem pasta controladora no mês;R$ mi IPCA;base ministerial + SIGA
+dmD2_45_D1_fora_D2_outro;Idem, critério D2: pastas de cota partidária que não são de bancada (filiado nomeado sem adesão do partido);R$ mi IPCA;base ministerial + SIGA

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Se usar estes dados, cite-os como abaixo."
+type: dataset
+title: "Painel mensal de orçamento e coalizão, 2015–2025 (ICG+, v1.1)"
+authors:
+  - family-names: Lemos
+    given-names: Eduardo
+    affiliation: "Mestrado Profissional em Poder Legislativo, Cefor/Câmara dos Deputados"
+date-released: 2026-11-07
+version: "1.1"
+license: CC-BY-4.0
+repository-code: "https://github.com/USUARIO_GITHUB/painel-orcamento-coalizao-2015-2025"
+keywords: [orçamento público, emendas parlamentares, presidencialismo de coalizão, Brasil, ICG]
