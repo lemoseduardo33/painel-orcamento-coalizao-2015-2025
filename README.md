@@ -22,9 +22,9 @@ Painel mensal (132 meses, jan/2015–dez/2025) que reúne, numa linha por mês, 
 
 - **Valores:** R$ milhões a preços constantes pelo IPCA do SIGA Brasil, mês de execução.
 - **Reescala SIGA → SIOP:** o SIGA distribui a despesa pelos meses; o total anual de cada órgão, ano e RP é reescalado ao SIOP, que classifica pelo RP vigente. A série sem reescala está no painel (sufixo `_siga`) para robustez.
-- **Base ministerial:** gerada a partir da tabela de mandatos publicada em [base-ministerial-brasil-2015-2025](https://github.com/USUARIO_GITHUB/base-ministerial-brasil-2015-2025). O mês fica com quem ocupou a pasta por mais dias; o interino herda a cota do titular; a Vice-Presidência fica fora da contagem.
+- **Base ministerial:** gerada a partir da tabela de mandatos publicada em [base-ministerial-brasil-2015-2025](https://github.com/lemoseduardo33/base-ministerial-brasil-2015-2025). O mês fica com quem ocupou a pasta por mais dias; o interino herda a cota do titular; a Vice-Presidência fica fora da contagem.
 - **Presidência da República:** a UO 20101 vai para a Casa Civil; as UOs com vínculo identificável vão para a pasta correspondente.
-- **RP8/RP9 por partido:** um registro por empenho, rateio igual entre os apoiadores ativos e partido por proxy em cascata. Detalhes e microdados em [emendas-rp8-rp9-apoiamento-partidos-2020-2025](https://github.com/USUARIO_GITHUB/emendas-rp8-rp9-apoiamento-partidos-2020-2025).
+- **RP8/RP9 por partido:** um registro por empenho, rateio igual entre os apoiadores ativos e partido por proxy em cascata. Detalhes e microdados em [emendas-rp8-rp9-apoiamento-partidos-2020-2025](https://github.com/lemoseduardo33/emendas-rp8-rp9-apoiamento-partidos-2020-2025).
 - **Créditos extraordinários (v1.1):** voltam ao discricionário ministerial, com duas exclusões declaradas: auxílio emergencial (UO 55101, 2020–2021) e cessão onerosa (UOs 32101 e 73104, 2019).
 
 As decisões estão descritas e justificadas no capítulo de Método e no apêndice de decisões da dissertação.
@@ -67,7 +67,7 @@ Pacotes R: `data.table`, `stringr`, `stringi`, `dplyr`, `tidyr`, `readr`, `readx
 
 ## Como citar
 
-LEMOS, Eduardo. *Painel mensal de orçamento e coalizão, 2015–2025 (ICG+, v1.1)*. Brasília: Mestrado Profissional em Poder Legislativo, Cefor/Câmara dos Deputados, 2026. Base de dados. Disponível em: <https://github.com/USUARIO_GITHUB/painel-orcamento-coalizao-2015-2025>.
+LEMOS, Eduardo. *Painel mensal de orçamento e coalizão, 2015–2025 (ICG+, v1.1)*. Brasília: Mestrado Profissional em Poder Legislativo, Cefor/Câmara dos Deputados, 2026. Base de dados. Disponível em: <https://github.com/lemoseduardo33/painel-orcamento-coalizao-2015-2025>.
 
 ## Licença
 
